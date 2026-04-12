@@ -1,0 +1,175 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram id="GQLAKQvAuCvxge5HH324" name="페이지-1">
+    <mxGraphModel dx="3520" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Driver" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#6c8ebf;fillColor=#dae8fc;" value="Driver" vertex="1">
+          <mxGeometry height="150" width="220" x="-370" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Driver_attr" parent="Driver" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- driverId: String&#xa;- name: String&#xa;- phoneNumber: String&#xa;- vehiclePlate: String" vertex="1">
+          <mxGeometry height="70" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Driver_sep" parent="Driver" style="line;strokeColor=#6c8ebf;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Driver_method" parent="Driver" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ requestVacantSpot(): List&#xa;+ getGuidance(): String" vertex="1">
+          <mxGeometry height="40" width="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#82b366;fillColor=#d5e8d4;" value="Admin" vertex="1">
+          <mxGeometry height="160" width="220" x="1260" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_attr" parent="Admin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- adminId: String&#xa;- name: String&#xa;- email: String&#xa;- role: String" vertex="1">
+          <mxGeometry height="70" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_sep" parent="Admin" style="line;strokeColor=#82b366;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin_method" parent="Admin" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ checkAlert(): List&#xa;+ manageDevice(): void&#xa;+ viewCongestion(): Report" vertex="1">
+          <mxGeometry height="50" width="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Vehicle" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#6c8ebf;fillColor=#dae8fc;" value="Vehicle" vertex="1">
+          <mxGeometry height="150" width="220" x="-380" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Vehicle_attr" parent="Vehicle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- vehicleId: String&#xa;- licensePlate: String&#xa;- type: String&#xa;- ownerId: String" vertex="1">
+          <mxGeometry height="70" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vehicle_sep" parent="Vehicle" style="line;strokeColor=#6c8ebf;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Vehicle_method" parent="Vehicle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ enter(): void&#xa;+ exit(): void" vertex="1">
+          <mxGeometry height="40" width="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingLot" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#d6b656;fillColor=#fff2cc;" value="ParkingLot" vertex="1">
+          <mxGeometry height="170" width="240" x="350" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingLot_attr" parent="ParkingLot" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- lotId: String&#xa;- name: String&#xa;- location: String&#xa;- totalSpaces: int&#xa;- availableSpaces: int" vertex="1">
+          <mxGeometry height="90" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingLot_sep" parent="ParkingLot" style="line;strokeColor=#d6b656;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingLot_method" parent="ParkingLot" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ getAvailableSpaces(): List&#xa;+ getCongestionLevel(): float" vertex="1">
+          <mxGeometry height="40" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingSpace" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#d6b656;fillColor=#fff2cc;" value="ParkingSpace" vertex="1">
+          <mxGeometry height="170" width="240" x="390" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingSpace_attr" parent="ParkingSpace" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- spaceId: String&#xa;- lotId: String&#xa;- spaceNumber: String&#xa;- status: SpaceStatus&#xa;- floor: int" vertex="1">
+          <mxGeometry height="90" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingSpace_sep" parent="ParkingSpace" style="line;strokeColor=#d6b656;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingSpace_method" parent="ParkingSpace" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ updateStatus(status): void&#xa;+ isAvailable(): boolean" vertex="1">
+          <mxGeometry height="40" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Sensor" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#d6b656;fillColor=#fff2cc;" value="Sensor" vertex="1">
+          <mxGeometry height="160" width="240" x="650" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="Sensor_attr" parent="Sensor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- sensorId: String&#xa;- spaceId: String&#xa;- type: String&#xa;- status: SensorStatus&#xa;- lastUpdated: DateTime" vertex="1">
+          <mxGeometry height="90" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Sensor_sep" parent="Sensor" style="line;strokeColor=#d6b656;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Sensor_method" parent="Sensor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ collectData(): SensorData&#xa;+ checkStatus(): SensorStatus" vertex="1">
+          <mxGeometry height="40" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Gate" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#d6b656;fillColor=#fff2cc;" value="Gate" vertex="1">
+          <mxGeometry height="160" width="240" x="20" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="Gate_attr" parent="Gate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- gateId: String&#xa;- lotId: String&#xa;- type: GateType&#xa;- status: GateStatus&#xa;- direction: String" vertex="1">
+          <mxGeometry height="90" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gate_sep" parent="Gate" style="line;strokeColor=#d6b656;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Gate_method" parent="Gate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ open(): void&#xa;+ close(): void&#xa;+ recognizePlate(): String" vertex="1">
+          <mxGeometry height="50" width="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingRecord" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#b85450;fillColor=#f8cecc;" value="ParkingRecord" vertex="1">
+          <mxGeometry height="180" width="240" x="720" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingRecord_attr" parent="ParkingRecord" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- recordId: String&#xa;- vehicleId: String&#xa;- spaceId: String&#xa;- entryTime: DateTime&#xa;- exitTime: DateTime&#xa;- fee: float" vertex="1">
+          <mxGeometry height="110" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingRecord_sep" parent="ParkingRecord" style="line;strokeColor=#b85450;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ParkingRecord_method" parent="ParkingRecord" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ calculateFee(): float&#xa;+ closeRecord(): void" vertex="1">
+          <mxGeometry height="30" width="240" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Alert" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#b85450;fillColor=#f8cecc;" value="Alert" vertex="1">
+          <mxGeometry height="170" width="240" x="720" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Alert_attr" parent="Alert" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- alertId: String&#xa;- type: AlertType&#xa;- message: String&#xa;- severity: String&#xa;- createdAt: DateTime&#xa;- isResolved: boolean" vertex="1">
+          <mxGeometry height="110" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Alert_sep" parent="Alert" style="line;strokeColor=#b85450;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Alert_method" parent="Alert" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ send(): void&#xa;+ resolve(): void" vertex="1">
+          <mxGeometry height="20" width="240" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="PredictionEngine" parent="1" style="swimlane;fontStyle=1;align=center;startSize=30;fontSize=13;strokeColor=#9673a6;fillColor=#e1d5e7;" value="PredictionEngine" vertex="1">
+          <mxGeometry height="180" width="240" x="950" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="PredictionEngine_attr" parent="PredictionEngine" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="- engineId: String&#xa;- modelVersion: String&#xa;- lastTrainedAt: DateTime&#xa;- accuracy: float" vertex="1">
+          <mxGeometry height="80" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PredictionEngine_sep" parent="PredictionEngine" style="line;strokeColor=#9673a6;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="PredictionEngine_method" parent="PredictionEngine" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;fontSize=12;" value="+ predictCongestion(): float&#xa;+ detectAnomaly(): Alert&#xa;+ recommendSpace(): ParkingSpace&#xa;+ trainModel(): void" vertex="1">
+          <mxGeometry height="60" width="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="Driver" style="endArrow=open;endFill=0;startArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;" target="Vehicle" value="owns&#xa;1     1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="Driver" style="endArrow=open;endFill=0;startArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="ParkingRecord" value="has&#xa;1     *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="Admin_attr" style="endArrow=open;endFill=0;startArrow=none;html=1;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Alert_attr" value="receives&#xa;1     *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="ParkingLot" style="endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;html=1;strokeColor=#d6b656;strokeWidth=1.5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ParkingSpace" value="contains&#xa;1     *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="ParkingLot" style="endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;html=1;strokeColor=#d6b656;strokeWidth=1.5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Gate" value="has&#xa;1     *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="ParkingSpace" style="endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;html=1;strokeColor=#d6b656;strokeWidth=1.5;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Sensor" value="monitored by&#xa;1     1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="Vehicle" style="endArrow=open;endFill=0;startArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ParkingRecord_method" value="recorded in&#xa;1     *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" style="endArrow=open;endFill=0;startArrow=none;html=1;strokeColor=#b85450;strokeWidth=1.5;fontSize=11;entryX=1;entryY=0.3;entryDx=0;entryDy=0;" target="ParkingSpace" value="assigned to&#xa;*     1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="140" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WjDU0lNBj_SOtWHd3W0C-6" connectable="0" parent="r8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="0.3434" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="Sensor" style="endArrow=open;endFill=0;startArrow=none;dashed=1;html=1;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="PredictionEngine_method" value="feeds data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="PredictionEngine" style="endArrow=open;endFill=0;startArrow=none;dashed=1;html=1;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="Alert" value="«creates»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" edge="1" parent="1" source="PredictionEngine_attr" style="endArrow=open;endFill=0;startArrow=none;dashed=1;html=1;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" target="ParkingSpace" value="«recommends»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" edge="1" parent="1" source="Gate" style="endArrow=open;endFill=0;startArrow=none;dashed=1;html=1;strokeColor=#d6b656;strokeWidth=1.5;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Vehicle" value="detects">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
