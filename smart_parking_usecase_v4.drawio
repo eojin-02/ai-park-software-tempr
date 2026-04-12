@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ======================== -->
+    <!-- SYSTEM BOUNDARY (직사각형) -->
+    <!-- ======================== -->
+    <mxCell id="sys_box" value="스마트 주차장 혼잡/장애 관리 시스템" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;dashed=1;dashPattern=8 4;strokeWidth=2;verticalAlign=top;fontSize=15;fontStyle=1;spacingTop=8;align=center;" vertex="1" parent="1">
+      <mxGeometry x="360" y="50" width="820" height="1000" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- ACTORS (모두 경계 밖) -->
+    <!-- ======================== -->
+
+    <!-- 운전자 (왼쪽, 경계 밖) -->
+    <mxCell id="actor_driver" value="운전자" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;labelPosition=bottom;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="210" y="220" width="50" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- 관리자 (왼쪽, 경계 밖) -->
+    <mxCell id="actor_admin" value="관리자" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;labelPosition=bottom;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="210" y="650" width="50" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- 주차장 센서 (오른쪽, 경계 밖) -->
+    <mxCell id="actor_sensor" value="주차장 센서" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;labelPosition=bottom;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="280" width="50" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- LPR 카메라 (오른쪽, 경계 밖) -->
+    <mxCell id="actor_lpr" value="LPR 카메라" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;labelPosition=bottom;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="130" width="50" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- 외부 결제 시스템 (오른쪽, 경계 밖) -->
+    <mxCell id="actor_payment" value="외부 결제&#xa;시스템" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;labelPosition=bottom;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="450" width="50" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- USE CASES: 운전자 그룹 (파란색) -->
+    <!-- ======================== -->
+
+    <mxCell id="uc_vacant" value="빈자리 조회" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="120" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_guide" value="주차 위치 안내" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="230" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_entry" value="차량 진입 / 출차" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="340" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_pay" value="결제 처리" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="450" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- USE CASES: 관리자 그룹 (초록색) -->
+    <!-- ======================== -->
+
+    <mxCell id="uc_fault" value="장애 확인 및 처리" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="610" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_congestion" value="혼잡도 현황 조회" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="720" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_device" value="장치 상태 관리" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="830" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- USE CASES: 시스템 자동화 그룹 (노란색, 액터 없음) -->
+    <!-- ======================== -->
+
+    <mxCell id="uc_lpr" value="LPR 번호판 인식" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="120" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_sensor" value="센서 데이터 수집" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="310" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_predict" value="혼잡도 예측 (AI)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="500" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_anomaly" value="이상 탐지 (AI Ops)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="660" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="uc_alert" value="관리자 알림 발송" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="870" y="830" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- ASSOCIATIONS (실선, 화살표 없음) -->
+    <!-- ======================== -->
+
+    <!-- 운전자 → 빈자리 조회 -->
+    <mxCell id="e1" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;" edge="1" source="actor_driver" target="uc_vacant" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 운전자 → 주차 위치 안내 -->
+    <mxCell id="e2" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;" edge="1" source="actor_driver" target="uc_guide" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 운전자 → 차량 진입/출차 -->
+    <mxCell id="e3" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;" edge="1" source="actor_driver" target="uc_entry" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 운전자 → 결제 처리 -->
+    <mxCell id="e4" style="endArrow=none;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;" edge="1" source="actor_driver" target="uc_pay" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 관리자 → 장애 확인 및 처리 -->
+    <mxCell id="e5" style="endArrow=none;html=1;strokeColor=#82b366;strokeWidth=1.5;" edge="1" source="actor_admin" target="uc_fault" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 관리자 → 혼잡도 현황 조회 -->
+    <mxCell id="e6" style="endArrow=none;html=1;strokeColor=#82b366;strokeWidth=1.5;" edge="1" source="actor_admin" target="uc_congestion" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 관리자 → 장치 상태 관리 -->
+    <mxCell id="e7" style="endArrow=none;html=1;strokeColor=#82b366;strokeWidth=1.5;" edge="1" source="actor_admin" target="uc_device" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- LPR 카메라 → LPR 번호판 인식 -->
+    <mxCell id="e8" style="endArrow=none;html=1;strokeColor=#d6b656;strokeWidth=1.5;" edge="1" source="actor_lpr" target="uc_lpr" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 주차장 센서 → 센서 데이터 수집 -->
+    <mxCell id="e9" style="endArrow=none;html=1;strokeColor=#d6b656;strokeWidth=1.5;" edge="1" source="actor_sensor" target="uc_sensor" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 외부 결제 시스템 → 결제 처리 -->
+    <mxCell id="e10" style="endArrow=none;html=1;strokeColor=#b85450;strokeWidth=1.5;" edge="1" source="actor_payment" target="uc_pay" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- INCLUDE 관계 -->
+    <!-- ======================== -->
+
+    <!-- 주차 위치 안내 <<include>> 빈자리 조회 -->
+    <mxCell id="inc1" value="«include»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#0050ef;strokeColor=#0050ef;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" source="uc_guide" target="uc_vacant" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 차량 진입/출차 <<include>> LPR 번호판 인식 -->
+    <mxCell id="inc2" value="«include»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#0050ef;strokeColor=#0050ef;fontStyle=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" source="uc_entry" target="uc_lpr" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 차량 진입/출차 <<include>> 센서 데이터 수집 -->
+    <mxCell id="inc3" value="«include»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#0050ef;strokeColor=#0050ef;fontStyle=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" source="uc_entry" target="uc_sensor" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 혼잡도 현황 조회 <<include>> 혼잡도 예측 (AI) -->
+    <mxCell id="inc4" value="«include»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#0050ef;strokeColor=#0050ef;fontStyle=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="uc_congestion" target="uc_predict" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ======================== -->
+    <!-- EXTEND 관계 -->
+    <!-- ======================== -->
+
+    <!-- 이상 탐지 <<extend>> 관리자 알림 발송 -->
+    <mxCell id="ext1" value="«extend»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#b46504;strokeColor=#b46504;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="uc_anomaly" target="uc_alert" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 혼잡도 예측 <<extend>> 관리자 알림 발송 -->
+    <mxCell id="ext2" value="«extend»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#b46504;strokeColor=#b46504;fontStyle=1;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;" edge="1" source="uc_predict" target="uc_alert" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1110" y="548" />
+          <mxPoint x="1110" y="846" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- 관리자 알림 발송 <<extend>> 장애 확인 및 처리 -->
+    <mxCell id="ext3" value="«extend»" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;fontSize=12;fontColor=#b46504;strokeColor=#b46504;fontStyle=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="uc_alert" target="uc_fault" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="810" y="860" />
+          <mxPoint x="810" y="640" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
