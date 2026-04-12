@@ -1,0 +1,810 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="opZjIQ5NEkLKYf9wrIVn" name="페이지-1">
+    <mxGraphModel dx="1413" dy="960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="[시퀀스 다이어그램 1] 차량 진입 및 주차 위치 안내" vertex="1">
+          <mxGeometry height="40" width="620" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-1" edge="1" parent="1" source="p1_driver_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110.00000000000023" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_driver_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" value="Driver&#xa;(운전자)" vertex="1">
+          <mxGeometry height="50" width="100" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-2" edge="1" parent="1" source="p1_lpr_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_lpr_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="LPRCamera&#xa;(LPR 카메라)" vertex="1">
+          <mxGeometry height="50" width="100" x="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-3" edge="1" parent="1" source="p1_gate_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_gate_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Gate&#xa;(게이트)" vertex="1">
+          <mxGeometry height="50" width="100" x="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-4" edge="1" parent="1" source="p1_parkinglot_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_parkinglot_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="ParkingLot&#xa;(주차장)" vertex="1">
+          <mxGeometry height="50" width="100" x="510" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-5" edge="1" parent="1" source="p1_prediction_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_prediction_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" value="PredictionEngine&#xa;(AI 분석 엔진)" vertex="1">
+          <mxGeometry height="50" width="120" x="660" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-6" edge="1" parent="1" source="p1_sensor_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_sensor_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Sensor&#xa;(센서)" vertex="1">
+          <mxGeometry height="50" width="100" x="830" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-7" edge="1" parent="1" source="p1_parkingrecord_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_parkingrecord_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" value="ParkingRecord&#xa;(주차 기록)" vertex="1">
+          <mxGeometry height="50" width="110" x="980" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_driver_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" x="110" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_lpr_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="260" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_gate_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="410" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_parkinglot_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d6b656;" value="">
+          <mxGeometry relative="1" x="560" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_prediction_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" x="720" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_sensor_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="880" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_record_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#9673a6;" value="">
+          <mxGeometry relative="1" x="1035" y="130" as="geometry">
+            <Array as="points">
+              <mxPoint x="1035" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_step1_label" parent="1" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#333333;" value="1. 차량 진입 감지" vertex="1">
+          <mxGeometry height="30" width="50" x="50" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p1_msg1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;fontSize=10;" value="차량 진입 감지 요청">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="170" as="sourcePoint" />
+            <mxPoint x="260" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg1_label" connectable="0" parent="p1_msg1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="진입(차량 접근)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="210" as="sourcePoint" />
+            <mxPoint x="410" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg2_label" connectable="0" parent="p1_msg2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="번호판 인식 및 전송(plateNumber)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="250" as="sourcePoint" />
+            <mxPoint x="560" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg3_label" connectable="0" parent="p1_msg3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="진입 허가 요청(plateNumber)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="290" as="sourcePoint" />
+            <mxPoint x="880" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg4_label" connectable="0" parent="p1_msg4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="현재 주차 공간 상태 조회()" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="330" as="sourcePoint" />
+            <mxPoint x="560" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg5_label" connectable="0" parent="p1_msg5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="spaceStatus[ ] 반환" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="370" as="sourcePoint" />
+            <mxPoint x="720" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg6_label" connectable="0" parent="p1_msg6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="주차 공간 추천 요청(spaceStatus[])" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="410" as="sourcePoint" />
+            <mxPoint x="560" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg7_label" connectable="0" parent="p1_msg7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="recommendedSpace 반환" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="450" as="sourcePoint" />
+            <mxPoint x="410" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg8_label" connectable="0" parent="p1_msg8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="진입 허가(grantEntry)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_gate_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="차단기 개방(openBarrier)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="490" />
+              <mxPoint x="450" y="510" />
+              <mxPoint x="410" y="510" />
+            </Array>
+            <mxPoint x="410" y="490" as="sourcePoint" />
+            <mxPoint x="450" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="550" as="sourcePoint" />
+            <mxPoint x="110" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg10_label" connectable="0" parent="p1_msg10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="추천 주차 위치 안내(spaceLocation)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="590" as="sourcePoint" />
+            <mxPoint x="1035" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg11_label" connectable="0" parent="p1_msg11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="진입 기록 생성(plateNumber, entryTime, spaceId)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="640" as="sourcePoint" />
+            <mxPoint x="560" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg12_label" connectable="0" parent="p1_msg12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="주차 감지 이벤트(spaceId, status=OCCUPIED)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_parkinglot_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="빈자리 수 감소 처리(updateAvailableCount)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="680" />
+              <mxPoint x="600" y="700" />
+              <mxPoint x="560" y="700" />
+            </Array>
+            <mxPoint x="560" y="680" as="sourcePoint" />
+            <mxPoint x="600" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="740" as="sourcePoint" />
+            <mxPoint x="720" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg14_label" connectable="0" parent="p1_msg14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="혼잡도 갱신 요청(currentOccupancy)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="780" as="sourcePoint" />
+            <mxPoint x="560" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1_msg15_label" connectable="0" parent="p1_msg15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="예측 혼잡도 반환(congestionLevel)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="[시퀀스 다이어그램 2] 차량 출차 및 주차 상태 갱신" vertex="1">
+          <mxGeometry height="40" width="620" x="250" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-9" edge="1" parent="1" source="p2_driver_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110.00000000000023" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_driver_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" value="Driver&#xa;(운전자)" vertex="1">
+          <mxGeometry height="50" width="100" x="60" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-10" edge="1" parent="1" source="p2_lpr_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_lpr_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="LPRCamera&#xa;(LPR 카메라)" vertex="1">
+          <mxGeometry height="50" width="100" x="210" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-11" edge="1" parent="1" source="p2_gate_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_gate_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Gate&#xa;(게이트)" vertex="1">
+          <mxGeometry height="50" width="100" x="360" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-12" edge="1" parent="1" source="p2_parkinglot_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_parkinglot_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="ParkingLot&#xa;(주차장)" vertex="1">
+          <mxGeometry height="50" width="100" x="510" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-13" edge="1" parent="1" source="p2_parkingrecord_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_parkingrecord_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" value="ParkingRecord&#xa;(주차 기록)" vertex="1">
+          <mxGeometry height="50" width="110" x="660" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-14" edge="1" parent="1" source="p2_sensor_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_sensor_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Sensor&#xa;(센서)" vertex="1">
+          <mxGeometry height="50" width="100" x="820" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-15" edge="1" parent="1" source="p2_prediction_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_prediction_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" value="PredictionEngine&#xa;(AI 분석 엔진)" vertex="1">
+          <mxGeometry height="50" width="120" x="970" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="p2_driver_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" x="110" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_lpr_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="260" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_gate_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="410" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_parkinglot_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d6b656;" value="">
+          <mxGeometry relative="1" x="560" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_record_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#9673a6;" value="">
+          <mxGeometry relative="1" x="715" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_sensor_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="870" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_prediction_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" x="1030" y="990" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="1030" as="sourcePoint" />
+            <mxPoint x="560" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg1_label" connectable="0" parent="p2_msg1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="출차 감지 이벤트(spaceId, status=VACANT)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1070" as="sourcePoint" />
+            <mxPoint x="410" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg2_label" connectable="0" parent="p2_msg2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="출차 번호판 인식(plateNumber)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="1110" as="sourcePoint" />
+            <mxPoint x="560" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg3_label" connectable="0" parent="p2_msg3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="출차 처리 요청(plateNumber)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1150" as="sourcePoint" />
+            <mxPoint x="715" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg4_label" connectable="0" parent="p2_msg4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="주차 기록 조회(plateNumber)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="715" y="1190" as="sourcePoint" />
+            <mxPoint x="560" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg5_label" connectable="0" parent="p2_msg5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="entryTime, spaceId 반환" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_parkinglot_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="주차 요금 계산(calcFee(duration))">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="1230" />
+              <mxPoint x="600" y="1250" />
+              <mxPoint x="560" y="1250" />
+            </Array>
+            <mxPoint x="560" y="1230" as="sourcePoint" />
+            <mxPoint x="600" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1290" as="sourcePoint" />
+            <mxPoint x="410" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg7_label" connectable="0" parent="p2_msg7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="출차 허가(fee)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="1330" as="sourcePoint" />
+            <mxPoint x="110" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg8_label" connectable="0" parent="p2_msg8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="요금 안내 및 결제 요청(fee)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1370" as="sourcePoint" />
+            <mxPoint x="410" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg9_label" connectable="0" parent="p2_msg9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="결제 완료(paymentConfirmed)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_gate_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="차단기 개방(openBarrier)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="1410" />
+              <mxPoint x="450" y="1430" />
+              <mxPoint x="410" y="1430" />
+            </Array>
+            <mxPoint x="410" y="1410" as="sourcePoint" />
+            <mxPoint x="450" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1470" as="sourcePoint" />
+            <mxPoint x="715" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg11_label" connectable="0" parent="p2_msg11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="출차 기록 갱신(exitTime, fee, status=EXITED)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1520" as="sourcePoint" />
+            <mxPoint x="1030" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg12_label" connectable="0" parent="p2_msg12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="혼잡도 재예측 요청(currentOccupancy)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1560" as="sourcePoint" />
+            <mxPoint x="560" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg13_label" connectable="0" parent="p2_msg13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="갱신된 혼잡도 반환(congestionLevel)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1610" as="sourcePoint" />
+            <mxPoint x="870" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2_msg14_label" connectable="0" parent="p2_msg14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="주차 공간 상태 갱신(spaceId, VACANT)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="[시퀀스 다이어그램 3] 이상 탐지 및 관리자 알림" vertex="1">
+          <mxGeometry height="40" width="620" x="250" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-16" edge="1" parent="1" source="p3_sensor_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110.00000000000023" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_sensor_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Sensor&#xa;(센서)" vertex="1">
+          <mxGeometry height="50" width="100" x="60" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-17" edge="1" parent="1" source="p3_parkinglot_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_parkinglot_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" value="ParkingLot&#xa;(주차장)" vertex="1">
+          <mxGeometry height="50" width="100" x="220" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-18" edge="1" parent="1" source="p3_prediction_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_prediction_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" value="PredictionEngine&#xa;(AI 분석 엔진)" vertex="1">
+          <mxGeometry height="50" width="120" x="380" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-19" edge="1" parent="1" source="p3_alert_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_alert_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=11;" value="Alert&#xa;(알림)" vertex="1">
+          <mxGeometry height="50" width="100" x="560" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-20" edge="1" parent="1" source="p3_admin_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_admin_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" value="Admin&#xa;(관리자)" vertex="1">
+          <mxGeometry height="50" width="100" x="720" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-21" edge="1" parent="1" source="p3_gate_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="930" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_gate_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Gate&#xa;(게이트)" vertex="1">
+          <mxGeometry height="50" width="100" x="880" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="v-Yjbw7DlDpivAOS0zoC-22" edge="1" parent="1" source="p3_lpr_box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1095" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_lpr_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="LPRCamera&#xa;(LPR 카메라)" vertex="1">
+          <mxGeometry height="50" width="110" x="1040" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="p3_sensor_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="110" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_parkinglot_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d6b656;" value="">
+          <mxGeometry relative="1" x="270" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_prediction_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" x="440" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_alert_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d79b00;" value="">
+          <mxGeometry relative="1" x="610" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_admin_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" x="770" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_gate_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="930" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="930" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_lpr_line" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" x="1095" y="1850" as="geometry">
+            <Array as="points">
+              <mxPoint x="1095" y="2470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1890" as="sourcePoint" />
+            <mxPoint x="270" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg1_label" connectable="0" parent="p3_msg1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="이상 신호 감지(sensorId, anomalyData)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="1930" as="sourcePoint" />
+            <mxPoint x="440" y="1930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg2_label" connectable="0" parent="p3_msg2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="이상 탐지 분석 요청(anomalyData)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_pred_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="이상 유형 분류(classifyAnomaly)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1970" />
+              <mxPoint x="490" y="1990" />
+              <mxPoint x="440" y="1990" />
+            </Array>
+            <mxPoint x="440" y="1970" as="sourcePoint" />
+            <mxPoint x="490" y="1970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="2030" as="sourcePoint" />
+            <mxPoint x="270" y="2030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg4_label" connectable="0" parent="p3_msg4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="탐지 결과 반환(anomalyType, severity)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="2070" as="sourcePoint" />
+            <mxPoint x="610" y="2070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg5_label" connectable="0" parent="p3_msg5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="알림 생성(anomalyType, severity, location)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="2110" as="sourcePoint" />
+            <mxPoint x="770" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg6_label" connectable="0" parent="p3_msg6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="장애 알림 전송(alertMessage, timestamp)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="2150" as="sourcePoint" />
+            <mxPoint x="270" y="2150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg7_label" connectable="0" parent="p3_msg7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="장애 상태 확인 요청(sensorId)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg8" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="2190" as="sourcePoint" />
+            <mxPoint x="110" y="2190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg8_label" connectable="0" parent="p3_msg8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="센서 진단 요청(sensorId)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="2230" as="sourcePoint" />
+            <mxPoint x="270" y="2230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg9_label" connectable="0" parent="p3_msg9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="진단 결과 반환(diagnosticResult)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="2270" as="sourcePoint" />
+            <mxPoint x="770" y="2270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg10_label" connectable="0" parent="p3_msg10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="장애 상태 보고(deviceStatus, diagnosticResult)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="2310" as="sourcePoint" />
+            <mxPoint x="930" y="2310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg11_label" connectable="0" parent="p3_msg11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="긴급 게이트 차단 명령(gateId, action=CLOSE)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_gate_self" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="차단기 긴급 차단(forceClose)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="2350" />
+              <mxPoint x="970" y="2370" />
+              <mxPoint x="930" y="2370" />
+            </Array>
+            <mxPoint x="930" y="2350" as="sourcePoint" />
+            <mxPoint x="970" y="2350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="2410" as="sourcePoint" />
+            <mxPoint x="1095" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg13_label" connectable="0" parent="p3_msg13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="장치 재시작 명령(deviceId, action=RESTART)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="2450" as="sourcePoint" />
+            <mxPoint x="770" y="2450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3_msg14_label" connectable="0" parent="p3_msg14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="조치 완료 알림(status=RESOLVED)" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

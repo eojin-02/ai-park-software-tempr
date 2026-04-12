@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="배치 다이어그램" id="4StJwEDkSr1effCm2tVK">
+    <mxGraphModel dx="1201" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="asYCE13gVzO6A0aWjgpS-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=20;fontStyle=1;" value="스마트 주차장 혼잡/장애 관리 시스템 - 배치 다이어그램" vertex="1">
+          <mxGeometry height="30" width="700" x="220" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="현장 장치 노드&#xa;- 주차 공간 Sensor&#xa;- Gate(차단기)&#xa;- LPR Camera" vertex="1">
+          <mxGeometry height="160" width="220" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="운전자 앱 / 키오스크&#xa;- 빈자리 조회&#xa;- 주차 위치 안내" vertex="1">
+          <mxGeometry height="120" width="220" x="60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" value="관리자 대시보드&#xa;- 혼잡도 확인&#xa;- 장애 확인&#xa;- 장치 상태 관리" vertex="1">
+          <mxGeometry height="130" width="240" x="860" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="중앙 서버&lt;br&gt;- Parking Management Server(주차장 관리 서버)&lt;br&gt;- Prediction Engine(예측 및 분석 엔진)&lt;br&gt;- Parking Record Manager(주차 기록 관리 모듈)&lt;br&gt;- Alert Manager(알림 관리 모듈)" vertex="1">
+          <mxGeometry height="210" width="320" x="410" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-6" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" value="DB 서버&#xa;- ParkingLot DB&#xa;- ParkingRecord DB&#xa;- Alert DB" vertex="1">
+          <mxGeometry height="170" width="170" x="510" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;dashed=1;" value="외부 결제 시스템" vertex="1">
+          <mxGeometry height="80" width="180" x="940" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-8" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-2" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-5" value="실시간 장치 데이터 전송">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-9" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-3" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-5" value="주차 조회/안내 요청">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-10" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-5" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-3" value="추천 결과 / 상태 정보">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-11" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-4" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-5" value="모니터링 요청">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-12" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-5" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-4" value="혼잡도 / 장애 알림">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-13" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-5" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-6" value="주차 상태 / 기록 저장">
+          <mxGeometry relative="1" x="-0.2857" y="-40" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-14" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-6" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-5" value="조회 결과">
+          <mxGeometry relative="1" x="-0.4286" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-15" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-5" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-7" value="결제 요청">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="asYCE13gVzO6A0aWjgpS-16" edge="1" parent="1" source="asYCE13gVzO6A0aWjgpS-7" style="endArrow=block;html=1;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;fontSize=12;" target="asYCE13gVzO6A0aWjgpS-5" value="결제 승인 / 결과">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
